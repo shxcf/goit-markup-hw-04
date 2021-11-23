@@ -213,14 +213,6 @@ body {
 
 /* --------------------THINGS---------------- */
 
-.things-list {
-  display: flex;
-}
-
-.things-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .things-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -243,15 +235,53 @@ body {
   margin-right: 30px;
 }
 
-.things-title {
+.things-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.things-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.things-social-item {
+  width: 270px;
+  height: 120px;
+}
+
+.things-social-item + .things-social-item {
+  margin-left: 30px;
+}
+
+.things-social {
+  padding-top: 29px;
+}
+
+/* ------------------OCCUPATION---------------------------- */
+
+.occupation-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  padding-top: 94px;
   padding-bottom: 50px;
   text-align: center;
+}
+
+.occupation-list {
+  display: flex;
+}
+
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ----------------------GROUP---------------------------- */
@@ -379,10 +409,6 @@ body {
 
 .footer-logos {
   margin-bottom: 20px;
-}
-
-.footer-items {
-  margin-left: 215px;
 }
 
 /* -------------------------THEMES------------------- */
