@@ -67,12 +67,15 @@ body {
   display: block;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
+.header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-list {
@@ -166,6 +169,9 @@ body {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.decision-item1 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -181,6 +187,12 @@ body {
   margin-bottom: 30px;
   width: 696px;
   height: 120px;
+}
+
+.decision-item2 {
+  display: block;
+  justify-content: center;
+  text-align: center;
 }
 
 .decision-btn {
@@ -280,7 +292,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  padding-top: 30px;
   text-align: center;
 }
 
@@ -291,7 +302,11 @@ body {
   color: var(--main-text-color);
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 16px;
+}
+
+.group-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .group-item {
@@ -374,8 +389,10 @@ body {
 
 .themes-list {
   display: flex;
-  margin-bottom: 34px;
   justify-content: center;
+  min-width: 611px;
+  min-height: 54px;
+  padding-bottom: 50px;
 }
 
 .themes-item:not(:last-child) {
@@ -397,8 +414,7 @@ body {
 }
 
 .themes-items-text {
-  margin-left: 24px;
-  margin-bottom: 20px;
+  padding: 20px 24px 20px 24px;
 }
 
 .themes-items:nth-child(3n) {
