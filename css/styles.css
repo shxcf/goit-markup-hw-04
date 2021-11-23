@@ -119,25 +119,17 @@ body {
   display: inline;
 }
 
-.header-link:hover {
-  color: var(--accent-title-color);
-}
-
+.header-link:hover,
 .header-link:focus {
   color: var(--accent-title-color);
 }
 
-.header-tel:hover {
-  color: var(--accent-title-color);
-}
-
-.header-mail:hover {
-  color: var(--accent-title-color);
-}
-
+.header-tel:hover,
 .header-tel:focus {
   color: var(--accent-title-color);
 }
+
+.header-mail:hover,
 .header-mail:focus {
   color: var(--accent-title-color);
 }
@@ -167,6 +159,11 @@ body {
 
 .decision-container {
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/decision-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   display: flex;
@@ -247,6 +244,10 @@ body {
 
 /* ----------------------GROUP---------------------------- */
 
+.group-container {
+  background-color: #f5f4fa;
+}
+
 .group-list {
   display: flex;
 }
@@ -290,12 +291,51 @@ body {
   color: var(--main-text-color);
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .group-item {
   border: 1px #ffffff;
   background-color: #ffffff;
+}
+
+.group-social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.group-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.group-social-item + .group-social-item {
+  margin-left: 10px;
+}
+
+.group-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-social-link:hover,
+.group-social-link:focus {
+  background-color: var(--accent-title-color);
+}
+
+.group-social-link:hover .group-social-icon,
+.group-social-link:focus .group-social-icon {
+  fill: var(--main-btn-color);
+}
+
+.group-social-icon {
+  fill: #afb1b8;
 }
 
 /* ----------------------------FOOTER-------------------- */
@@ -380,11 +420,7 @@ body {
   color: var(--second-title-color);
 }
 
-.themes-btn:hover {
-  color: var(--main-btn-color);
-  background-color: var(--accent-title-color);
-}
-
+.themes-btn:hover,
 .themes-btn:focus {
   color: var(--main-btn-color);
   background-color: var(--accent-title-color);
@@ -403,6 +439,56 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+/* -----------------------CLIENTS --------------------------- */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  padding-bottom: 50px;
+}
+
+.clients-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-social-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-social-item + .clients-social-item {
+  margin-left: 30px;
+}
+
+.clients-social-icon {
+  fill: #afb1b8;
+}
+
+.clients-social-link:hover,
+.clients-social-link:focus {
+  border-color: var(--accent-title-color);
+}
+
+.clients-social-link:hover .clients-social-icon,
+.clients-social-link:focus .clients-social-icon {
+  fill: var(--accent-title-color);
 }
 
 /* -------------------------FOOTER----------------------- */
@@ -445,4 +531,63 @@ body {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  padding-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #afb1b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-title-color);
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: var(--main-btn-color);
+}
+
+.footer-items {
+  display: flex;
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+}
+
+.footer-items-2 {
+  padding-left: 70px;
+  padding-top: 75px;
 }
