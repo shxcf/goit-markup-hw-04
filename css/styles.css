@@ -99,16 +99,7 @@ body {
   margin-right: 51px;
 }
 
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
+.header-mail,
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -159,6 +150,11 @@ body {
   display: flex;
 }
 
+.header-social-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+
 .header-social-item + .header-social-item {
   margin-left: 30px;
 }
@@ -166,14 +162,6 @@ body {
 .header-social-link:hover .header-social-icon,
 .header-social-link:focus .header-social-icon {
   fill: var(--accent-title-color);
-}
-
-.header-social-link::before {
-  content: '';
-  background-image: url(./images/icon3.svg#tel);
-  display: inline-block;
-  width: 16px;
-  height: 12px;
 }
 
 /* --------------DECISION------------ */
